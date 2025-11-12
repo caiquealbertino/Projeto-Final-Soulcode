@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projeto-final</title>
+  </head>
+  <body class="bg-[#191019] flex flex-col min-h-screen">
+    <header class="flex justify-between px-40 py-5 bg">
+      <h1 class="text-2xl font-bold bg-[linear-gradient(to_right,#9b5cff,#00e0ff)] bg-clip-text text-transparent">TechIA Summit 2025</h1>
+      <nav>
+        <ul class="flex font-bold text-xl gap-8 items-center">
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="index.html">Início</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="sobre.html">Sobre</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="#">Sobre nós</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="#">Agenda</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="#">Fale com a Kor'AI</a></li>
+          <li class="text-[#ffffff] bg-[linear-gradient(to_right,#9b5cff,#5091F2)] p-2 rounded-lg hover:shadow-[0_0_5px_1px_#8E1DD8]"><a href="#">Ingressos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+        <section class="flex-grow py-20 text-center bg-linear-to-b from-[#191019] via-[#32094D] to-[#1d234e]"><h2 class="text-7xl text-x font-bold bg-[linear-gradient(to_right,#9b5cff,#00e0ff)] bg-clip-text text-transparent">Sobre o Evento</h2>
+        <p class="text-[#C4A0C5] text-xl max-w-3xl mx-auto mb-16">O TechIA Summit 2025 é o evento definitivo para quem deseja estar na vanguarda da revolução da inteligência artificial. Três dias de conteúdo intenso, networking de alto nível e oportunidades únicas.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-20 mb-20">
+          <div class="bg-[#2c0c39] p-8 rounded-lg text-left border border-[#3D263D]">
+            <i class="fa-solid fa-cube text-[#8E1DD8] text-3xl mb-4"></i>
+            <h3 class="text-white text-2xl font-semibold mb-2">Conteúdo Premium</h3>
+            <p class="text-[#C4A0C5]">Palestras e workshops com os maiores especialistas em IA do mundo</p>
+          </div>
+          <div class="bg-[#2c0c39] p-8 rounded-lg text-left border border-[#3D263D]">
+            <i class="fa-solid fa-rocket text-[#2EC5CD] text-3xl mb-4"></i>
+            <h3 class="text-white text-2xl font-semibold mb-2">Inovação</h3>
+            <p class="text-[#C4A0C5]">Descubra as últimas tendências e tecnologias emergentes em IA</p>
+          </div>
+          <div class="bg-[#2c0c39] p-8 rounded-lg text-left border border-[#3D263D]">
+            <i class="fa-solid fa-users text-[#9b5cff] text-3xl mb-4"></i>
+            <h3 class="text-white text-2xl font-semibold mb-2">Networking</h3>
+            <p class="text-[#C4A0C5]">Conecte-se com profissionais, empresas e investidores do setor</p>
+          </div>
+          <div class="bg-[#2c0c39] p-8 rounded-lg text-left border border-[#3D263D]">
+            <i class="fa-solid fa-trophy text-[#ff9900] text-3xl mb-4"></i>
+            <h3 class="text-white text-2xl font-semibold mb-2">Competições</h3>
+            <p class="text-[#C4A0C5]">Participe de hackathons e desafios com prêmios incríveis</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-20">
+          <div class="text-center">
+            <p class="text-5xl font-bold bg-[linear-gradient(to_right,#9b5cff,#00e0ff)] bg-clip-text text-transparent">50+</p>
+            <p class="text-[#C4A0C5] text-xl">Palestrantes</p>
+          </div>
+          <div class="text-center">
+            <p class="text-5xl font-bold bg-[linear-gradient(to_right,#9b5cff,#00e0ff)] bg-clip-text text-transparent">100+</p>
+            <p class="text-[#C4A0C5] text-xl">Empresas</p>
+          </div>
+          <div class="text-center">
+            <p class="text-5xl font-bold bg-[linear-gradient(to_right,#9b5cff,#00e0ff)] bg-clip-text text-transparent">30+</p>
+            <p class="text-[#C4A0C5] text-xl">Workshops</p>
+          </div>
+        </div>
+      </section>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('cHJvamV0b2JydW5hZGlhczoyODhkNmQ0MS0xYWE5LTQzZmItODE5YS1mOTc2OWJjM2M1ODI=')
+                    .withButton({"color":"#8e1dd8","icon":"https://blipmediastore.blob.core.windows.net/permanent/Media_4_7b81914b-bed8-4153-8e06-e534b9d6a810"})
+                    .withCustomCommonUrl('https://designconv-dc-ia.chat.blip.ai/')
+                    .build();
+            }
+        })();
+    </script>
+  </body>
+</html>
