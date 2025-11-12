@@ -192,5 +192,19 @@
         </div>
       </div>
     </section>
+    
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('cHJvamV0b2JydW5hZGlhczoyODhkNmQ0MS0xYWE5LTQzZmItODE5YS1mOTc2OWJjM2M1ODI=')
+                    .withButton({"color":"#8e1dd8","icon":"https://blipmediastore.blob.core.windows.net/permanent/Media_4_7b81914b-bed8-4153-8e06-e534b9d6a810"})
+                    .withCustomCommonUrl('https://designconv-dc-ia.chat.blip.ai/')
+                    .build();
+            }
+        })();
+    </script>
   </body>
 </html>
