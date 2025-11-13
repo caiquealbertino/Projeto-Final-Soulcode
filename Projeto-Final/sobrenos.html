@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>projeto-final</title>
+  </head>
+  <body class="bg-[#191019] flex flex-col min-h-screen">
+    <header class="flex justify-between px-40 py-5 bg">
+      <h1 class="text-2xl font-bold bg-[linear-gradient(to_right,#9b5cff,#00e0ff)] bg-clip-text text-transparent">TechIA Summit 2025</h1>
+      <nav>
+        <ul class="flex font-bold text-xl gap-8 items-center">
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="index.html">Início</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="sobre.html">Sobre</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="#sobrenos.html">Sobre nós</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="Agenda.html">Agenda</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="#">Fale com a Kor'AI</a></li>
+          <li class="text-[#ffffff] bg-[linear-gradient(to_right,#9b5cff,#5091F2)] p-2 rounded-lg hover:shadow-[0_0_5px_1px_#8E1DD8]"><a href="ingressos.html">Ingressos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+  <section 
+  class="sobre-nos relative flex justify-center items-center min-h-screen bg-cover bg-center" 
+  style="background-image: url('./images/blur\ \(1\).jpg');"
+>
+  <div class="container">
+    <h2>SOBRE NÓS</h2>
+    <p>
+      Somos um squad de 5 estagiários da <strong>Blip</strong> que acredita que tecnologia + criatividade é a receita perfeita pra criar o futuro.<br><br>
+      Como parte do <strong>Bootcamp Fullstack IA da SoulCode</strong> temos a missão de criar um chatbot inteligente, integrado direto na página web e usando o Blip Studio demos vida à nossa querida Kor’AI :)<br><br>
+      A gente acredita em aprender fazendo, quebrar a cabeça junto, rir, testar, errar, ajustar e construir algo que faça a diferença. No final, é sobre colocar a mão no código e dar vida a conversas que realmente funcionam.
+    </p>
+
+    <div class="membros">
+      <div class="membro"><img src="./images/bruna.jfif" alt="Bruna Bassan"></div>
+      <div class="membro"><img src="./images/caique.jfif" alt="Caique Albertino"></div>
+      <div class="membro"><img src="./images/eric.jfif" alt="Erick Badaró"></div>
+      <div class="membro"><img src="./images/angelo.jfif" alt="Angelo Finassi"></div>
+      <div class="membro"><img src="./images/anna.jpeg" alt="Anna Machalous"></div>
+    </div>
+
+    <p class="nomes">
+      Bruna Bassan · Caique Albertino · Erick Badaró · Angelo Finassi · Anna Machalous
+    </p>
+  </div>
+</section>
+
+<style>
+.sobre-nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15); 
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 900px;
+  text-align: center;
+  backdrop-filter: blur(10px); 
+  color: #fff;
+}
+
+.sobre-nos h2 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.sobre-nos p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #fff;
+}
+
+.membros {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0 15px;
+  flex-wrap: wrap;
+}
+
+.membro img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membro img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.nomes {
+  font-size: 14px;
+  opacity: 0.9;
+}
+</style>
