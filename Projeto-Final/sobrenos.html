@@ -9,6 +9,18 @@
     <title>projeto-final</title>
   </head>
   <body class="bg-[#191019] flex flex-col min-h-screen">
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+  <script>
+      (function () {
+          window.onload = function () {
+              new BlipChat()
+                  .withAppKey('cHJvamV0b2JydW5hZGlhczoyODhkNmQ0MS0xYWE5LTQzZmItODE5YS1mOTc2OWJjM2M1ODI=')
+                  .withButton({"color":"#8e1dd8","icon":"https://blipmediastore.blob.core.windows.net/permanent/Media_4_7b81914b-bed8-4153-8e06-e534b9d6a810"})
+                  .withCustomCommonUrl('https://designconv-dc-ia.chat.blip.ai/')
+                  .build();
+          }
+      })();
+  </script>
     <header class="flex justify-between px-40 py-5 bg">
       <h1 class="text-2xl font-bold bg-[linear-gradient(to_right,#9b5cff,#00e0ff)] bg-clip-text text-transparent">TechIA Summit 2025</h1>
       <nav>
@@ -17,7 +29,7 @@
           <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="sobre.html">Sobre</a></li>
           <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="#sobrenos.html">Sobre nós</a></li>
           <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="Agenda.html">Agenda</a></li>
-          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="#">Fale com a Kor'AI</a></li>
+          <li class="text-[#D1CED1] hover:text-[#8E1DD8]"><a href="https://designconv-dc-ia.chat.blip.ai/?appKey=cHJvamV0b2JydW5hZGlhczoyODhkNmQ0MS0xYWE5LTQzZmItODE5YS1mOTc2OWJjM2M1ODI=&_gl=1*1sb9ifs*_gcl_au*NjI1NDE4NTI3LjE3NjI4NjM5NTIuMjQ4ODgzNTQ0LjE3NjMwNDk3MDIuMTc2MzA1MTUyOA..*_ga*MTg5Mjg3NDMyMS4xNzYyNzgzOTk1*_ga_8GVWK8YMGL*czE3NjMwNDk2NzEkbzEzJGcxJHQxNzYzMDUxNTI4JGo1OCRsMCRoMTE5MzUyNzg0MA" target="_blank">Fale com a Kor'AI</a></li>
           <li class="text-[#ffffff] bg-[linear-gradient(to_right,#9b5cff,#5091F2)] p-2 rounded-lg hover:shadow-[0_0_5px_1px_#8E1DD8]"><a href="ingressos.html">Ingressos</a></li>
         </ul>
       </nav>
@@ -26,8 +38,7 @@
 
   <section 
   class="sobre-nos relative flex justify-center items-center min-h-screen bg-cover bg-center" 
-  style="background-image: url('./images/blur\ \(1\).jpg');"
->
+  style="background-image: url('./images/blur\ \(1\).jpg');">
   <div class="container">
     <h2>SOBRE NÓS</h2>
     <p>
